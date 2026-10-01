@@ -1,0 +1,12 @@
+{
+    "model": "original_corrupted_cnn",
+    "stage": "pre_unlearning",
+    "forget_samples": 5000,
+    "retain_samples": 45000,
+    "test_samples": 10000,
+    "forget_true_label_accuracy": 10.68,
+    "forget_corrupted_label_accuracy": 84.0,
+    "forget_other_label_rate": 5.319999999999993,
+    "retain_accuracy": 97.84444444444445,
+    "clean_test_accuracy": 64.75999999999999
+}
