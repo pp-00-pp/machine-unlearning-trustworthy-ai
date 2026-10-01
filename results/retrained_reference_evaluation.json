@@ -1,0 +1,12 @@
+{
+    "model": "retrained_reference_cnn",
+    "stage": "retrained_reference",
+    "forget_samples": 5000,
+    "retain_samples": 45000,
+    "test_samples": 10000,
+    "forget_true_label_accuracy": 72.46000000000001,
+    "forget_corrupted_label_accuracy": 3.32,
+    "forget_other_label_rate": 24.21999999999999,
+    "retain_accuracy": 97.88,
+    "clean_test_accuracy": 71.34
+}
