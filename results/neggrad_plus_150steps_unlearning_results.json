@@ -1,0 +1,13 @@
+{
+    "method": "NegGrad+",
+    "seed": 42,
+    "forget_samples": 5000,
+    "retain_samples": 45000,
+    "batch_size": 128,
+    "unlearning_steps": 150,
+    "learning_rate": 0.0001,
+    "alpha": 0.9,
+    "gradient_clip": 1.0,
+    "unlearning_time_seconds": 2.436320503940806,
+    "model_parameters": 1070794
+}

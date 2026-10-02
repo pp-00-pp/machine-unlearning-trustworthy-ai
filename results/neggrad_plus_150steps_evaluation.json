@@ -1,0 +1,12 @@
+{
+    "model": "unlearned_neggrad_plus_cnn",
+    "stage": "neggrad_plus_unlearned",
+    "forget_samples": 5000,
+    "retain_samples": 45000,
+    "test_samples": 10000,
+    "forget_true_label_accuracy": 52.959999999999994,
+    "forget_corrupted_label_accuracy": 23.72,
+    "forget_other_label_rate": 23.320000000000007,
+    "retain_accuracy": 91.24222222222222,
+    "clean_test_accuracy": 67.93
+}
