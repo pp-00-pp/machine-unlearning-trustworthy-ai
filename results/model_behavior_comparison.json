@@ -1,0 +1,44 @@
+{
+    "reference_model": "retrained_reference_cnn",
+    "unlearned_model": "neggrad_plus_150steps",
+    "metrics": {
+        "prediction_agreement": "higher_is_closer",
+        "mean_js_divergence": "lower_is_closer"
+    },
+    "forget": {
+        "split": "forget",
+        "num_samples": 5000,
+        "original_vs_retrained": {
+            "prediction_agreement_percent": 14.020000398159027,
+            "mean_js_divergence": 0.4951706528663635
+        },
+        "unlearned_vs_retrained": {
+            "prediction_agreement_percent": 57.440000772476196,
+            "mean_js_divergence": 0.23337170481681824
+        }
+    },
+    "retain": {
+        "split": "retain",
+        "num_samples": 45000,
+        "original_vs_retrained": {
+            "prediction_agreement_percent": 95.98000049591064,
+            "mean_js_divergence": 0.03601102530956268
+        },
+        "unlearned_vs_retrained": {
+            "prediction_agreement_percent": 90.1199996471405,
+            "mean_js_divergence": 0.05828050151467323
+        }
+    },
+    "test": {
+        "split": "test",
+        "num_samples": 10000,
+        "original_vs_retrained": {
+            "prediction_agreement_percent": 67.5100028514862,
+            "mean_js_divergence": 0.16268664598464966
+        },
+        "unlearned_vs_retrained": {
+            "prediction_agreement_percent": 71.28000259399414,
+            "mean_js_divergence": 0.14779168367385864
+        }
+    }
+}
