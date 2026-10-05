@@ -1,0 +1,352 @@
+{
+  "generated_utc": "2026-10-05T03:11:07.115447+00:00",
+  "script_sha256": "6f4a5c4b825978aad1c30afd05964259689af32ffbd198ce1ed67122eade67df",
+  "recorded_seed": 42,
+  "single_seed": true,
+  "sources": {
+    "original_pre_unlearning_evaluation.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/original_pre_unlearning_evaluation.json",
+      "sha256": "e5de5f856011b03eb5689ff030663a4a550db5f3c26ce7d4fbd6feb43cf06758",
+      "data": {
+        "model": "original_corrupted_cnn",
+        "stage": "pre_unlearning",
+        "forget_samples": 5000,
+        "retain_samples": 45000,
+        "test_samples": 10000,
+        "forget_true_label_accuracy": 10.68,
+        "forget_corrupted_label_accuracy": 84.0,
+        "forget_other_label_rate": 5.319999999999993,
+        "retain_accuracy": 97.84444444444445,
+        "clean_test_accuracy": 64.75999999999999
+      }
+    },
+    "retrained_reference_evaluation.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/retrained_reference_evaluation.json",
+      "sha256": "7a089f8960bceb230aabb8c1f6781dd179f573d4db4d0a6f06cedf9a54e97a49",
+      "data": {
+        "model": "retrained_reference_cnn",
+        "stage": "retrained_reference",
+        "forget_samples": 5000,
+        "retain_samples": 45000,
+        "test_samples": 10000,
+        "forget_true_label_accuracy": 72.46000000000001,
+        "forget_corrupted_label_accuracy": 3.32,
+        "forget_other_label_rate": 24.21999999999999,
+        "retain_accuracy": 97.88,
+        "clean_test_accuracy": 71.34
+      }
+    },
+    "neggrad_plus_100steps_evaluation.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/neggrad_plus_100steps_evaluation.json",
+      "sha256": "bc7ce7c9b5dd8369a140dfd7bf0aea46c4d336fa65d4ce4ec69f7438b3cce25a",
+      "data": {
+        "model": "unlearned_neggrad_plus_cnn",
+        "stage": "neggrad_plus_unlearned",
+        "forget_samples": 5000,
+        "retain_samples": 45000,
+        "test_samples": 10000,
+        "forget_true_label_accuracy": 46.18,
+        "forget_corrupted_label_accuracy": 34.4,
+        "forget_other_label_rate": 19.42,
+        "retain_accuracy": 94.13777777777777,
+        "clean_test_accuracy": 68.05
+      }
+    },
+    "neggrad_plus_150steps_evaluation.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/neggrad_plus_150steps_evaluation.json",
+      "sha256": "11de80a1ef27df79ab3c5474cd1b9fbf0bd01b69e530a73a03ab95a52dd7bb2f",
+      "data": {
+        "model": "unlearned_neggrad_plus_cnn",
+        "stage": "neggrad_plus_unlearned",
+        "forget_samples": 5000,
+        "retain_samples": 45000,
+        "test_samples": 10000,
+        "forget_true_label_accuracy": 52.959999999999994,
+        "forget_corrupted_label_accuracy": 23.72,
+        "forget_other_label_rate": 23.320000000000007,
+        "retain_accuracy": 91.24222222222222,
+        "clean_test_accuracy": 67.93
+      }
+    },
+    "neggrad_plus_200steps_evaluation.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/neggrad_plus_200steps_evaluation.json",
+      "sha256": "5199bba1a293cf8b3bbb39b591e397dbc95773c3f7a12da7b2684d1ca2e08018",
+      "data": {
+        "model": "unlearned_neggrad_plus_cnn",
+        "stage": "neggrad_plus_unlearned",
+        "forget_samples": 5000,
+        "retain_samples": 45000,
+        "test_samples": 10000,
+        "forget_true_label_accuracy": 56.89999999999999,
+        "forget_corrupted_label_accuracy": 18.68,
+        "forget_other_label_rate": 24.42000000000001,
+        "retain_accuracy": 88.73555555555555,
+        "clean_test_accuracy": 68.19
+      }
+    },
+    "neggrad_plus_500steps_evaluation.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/neggrad_plus_500steps_evaluation.json",
+      "sha256": "d865f180edd0185768774d69ee68ca598dd0eb60bf859389bcdb6b3202e93ebf",
+      "data": {
+        "model": "unlearned_neggrad_plus_cnn",
+        "stage": "neggrad_plus_unlearned",
+        "forget_samples": 5000,
+        "retain_samples": 45000,
+        "test_samples": 10000,
+        "forget_true_label_accuracy": 62.160000000000004,
+        "forget_corrupted_label_accuracy": 11.26,
+        "forget_other_label_rate": 26.58,
+        "retain_accuracy": 83.65555555555557,
+        "clean_test_accuracy": 68.07
+      }
+    },
+    "neggrad_plus_150steps_unlearning_results.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/neggrad_plus_150steps_unlearning_results.json",
+      "sha256": "b20232ea23280e0520bfcdf33c1fbcee99add66de2c7a601cda52f3a24f3cb6a",
+      "data": {
+        "method": "NegGrad+",
+        "seed": 42,
+        "forget_samples": 5000,
+        "retain_samples": 45000,
+        "batch_size": 128,
+        "unlearning_steps": 150,
+        "learning_rate": 0.0001,
+        "alpha": 0.9,
+        "gradient_clip": 1.0,
+        "unlearning_time_seconds": 2.436320503940806,
+        "model_parameters": 1070794
+      }
+    },
+    "retrained_reference_results.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/retrained_reference_results.json",
+      "sha256": "9bc1c95f5c3d119007471bbb72a6fb552f4d56ba5e38590b99d25efabd8345c8",
+      "data": {
+        "experiment": "retrained_reference_model",
+        "dataset": "CIFAR-10",
+        "seed": 42,
+        "architecture": "CompactCNN",
+        "model_parameters": 1070794,
+        "full_training_samples": 50000,
+        "excluded_forget_samples": 5000,
+        "retain_training_samples": 45000,
+        "test_samples": 10000,
+        "batch_size": 128,
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "optimizer": "Adam",
+        "loss_function": "CrossEntropyLoss",
+        "training_time_seconds": 43.69249011203647,
+        "final_test_loss": 1.2973006175994872,
+        "final_test_accuracy": 71.34,
+        "history": [
+          {
+            "epoch": 1,
+            "train_loss": 1.3524312383439805,
+            "train_accuracy": 51.586666666666666,
+            "test_loss": 1.0957612591743469,
+            "test_accuracy": 60.36,
+            "epoch_time_seconds": 4.605209209956229
+          },
+          {
+            "epoch": 2,
+            "train_loss": 0.9648828008651733,
+            "train_accuracy": 65.96444444444444,
+            "test_loss": 0.9704465479850769,
+            "test_accuracy": 66.2,
+            "epoch_time_seconds": 4.319394012913108
+          },
+          {
+            "epoch": 3,
+            "train_loss": 0.7948296280648973,
+            "train_accuracy": 72.10888888888888,
+            "test_loss": 0.8815950407028198,
+            "test_accuracy": 69.2,
+            "epoch_time_seconds": 4.334622918977402
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.664430467806922,
+            "train_accuracy": 76.67333333333333,
+            "test_loss": 0.830859822177887,
+            "test_accuracy": 71.28,
+            "epoch_time_seconds": 4.356454538065009
+          },
+          {
+            "epoch": 5,
+            "train_loss": 0.5479059604326884,
+            "train_accuracy": 80.74666666666667,
+            "test_loss": 0.8514463085174561,
+            "test_accuracy": 72.01,
+            "epoch_time_seconds": 4.381000931956805
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.4307735359721714,
+            "train_accuracy": 84.96888888888888,
+            "test_loss": 0.8784275859832764,
+            "test_accuracy": 71.84,
+            "epoch_time_seconds": 4.319563073921017
+          },
+          {
+            "epoch": 7,
+            "train_loss": 0.3223723293463389,
+            "train_accuracy": 89.07333333333334,
+            "test_loss": 0.9623435535430909,
+            "test_accuracy": 71.16,
+            "epoch_time_seconds": 4.349013083032332
+          },
+          {
+            "epoch": 8,
+            "train_loss": 0.22971257389916314,
+            "train_accuracy": 92.1511111111111,
+            "test_loss": 1.0556691444396973,
+            "test_accuracy": 71.22,
+            "epoch_time_seconds": 4.320668232045136
+          },
+          {
+            "epoch": 9,
+            "train_loss": 0.16211888541910383,
+            "train_accuracy": 94.5911111111111,
+            "test_loss": 1.1627728384017944,
+            "test_accuracy": 71.6,
+            "epoch_time_seconds": 4.354731102939695
+          },
+          {
+            "epoch": 10,
+            "train_loss": 0.10952081124120289,
+            "train_accuracy": 96.57777777777778,
+            "test_loss": 1.2973006175994872,
+            "test_accuracy": 71.34,
+            "epoch_time_seconds": 4.35149825795088
+          }
+        ]
+      }
+    },
+    "model_behavior_comparison.json": {
+      "absolute_path": "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/model_behavior_comparison.json",
+      "sha256": "1a76281ea4523e5d8247f731f1cb73953d64518fc1e384405e5b33666dcb120e",
+      "data": {
+        "reference_model": "retrained_reference_cnn",
+        "unlearned_model": "neggrad_plus_150steps",
+        "metrics": {
+          "prediction_agreement": "higher_is_closer",
+          "mean_js_divergence": "lower_is_closer"
+        },
+        "forget": {
+          "split": "forget",
+          "num_samples": 5000,
+          "original_vs_retrained": {
+            "prediction_agreement_percent": 14.020000398159027,
+            "mean_js_divergence": 0.4951706528663635
+          },
+          "unlearned_vs_retrained": {
+            "prediction_agreement_percent": 57.440000772476196,
+            "mean_js_divergence": 0.23337170481681824
+          }
+        },
+        "retain": {
+          "split": "retain",
+          "num_samples": 45000,
+          "original_vs_retrained": {
+            "prediction_agreement_percent": 95.98000049591064,
+            "mean_js_divergence": 0.03601102530956268
+          },
+          "unlearned_vs_retrained": {
+            "prediction_agreement_percent": 90.1199996471405,
+            "mean_js_divergence": 0.05828050151467323
+          }
+        },
+        "test": {
+          "split": "test",
+          "num_samples": 10000,
+          "original_vs_retrained": {
+            "prediction_agreement_percent": 67.5100028514862,
+            "mean_js_divergence": 0.16268664598464966
+          },
+          "unlearned_vs_retrained": {
+            "prediction_agreement_percent": 71.28000259399414,
+            "mean_js_divergence": 0.14779168367385864
+          }
+        }
+      }
+    }
+  },
+  "plotted_accuracies": {
+    "Original": [
+      10.68,
+      84.0,
+      97.84444444444445,
+      64.75999999999999
+    ],
+    "Retrained": [
+      72.46000000000001,
+      3.32,
+      97.88,
+      71.34
+    ],
+    "NegGrad+ 100": [
+      46.18,
+      34.4,
+      94.13777777777777,
+      68.05
+    ],
+    "NegGrad+ 150": [
+      52.959999999999994,
+      23.72,
+      91.24222222222222,
+      67.93
+    ],
+    "NegGrad+ 200": [
+      56.89999999999999,
+      18.68,
+      88.73555555555555,
+      68.19
+    ],
+    "NegGrad+ 500": [
+      62.160000000000004,
+      11.26,
+      83.65555555555557,
+      68.07
+    ]
+  },
+  "plotted_similarity": {
+    "prediction_agreement_percent": {
+      "original_vs_retrained": [
+        14.020000398159027,
+        95.98000049591064,
+        67.5100028514862
+      ],
+      "unlearned_vs_retrained": [
+        57.440000772476196,
+        90.1199996471405,
+        71.28000259399414
+      ]
+    },
+    "mean_js_divergence": {
+      "original_vs_retrained": [
+        0.4951706528663635,
+        0.03601102530956268,
+        0.16268664598464966
+      ],
+      "unlearned_vs_retrained": [
+        0.23337170481681824,
+        0.05828050151467323,
+        0.14779168367385864
+      ]
+    }
+  },
+  "plotted_times_seconds": [
+    2.436320503940806,
+    43.69249011203647
+  ],
+  "computed_speedup": 17.933802240453517,
+  "outputs": [
+    "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/figures/figure_1_accuracy_tradeoff.png",
+    "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/figures/figure_1_accuracy_tradeoff.pdf",
+    "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/figures/figure_2_behavioral_similarity.png",
+    "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/figures/figure_2_behavioral_similarity.pdf",
+    "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/figures/figure_3_update_time.png",
+    "/media/research/HDD2/Priya/machine-unlearning-trustworthy-ai/results/figures/figure_3_update_time.pdf"
+  ],
+  "note": "Full source precision used in plots. Only visible time annotations are formatted to two decimals. Retraining timer includes per-epoch test evaluation. No repeated-seed uncertainty is estimated."
+}
